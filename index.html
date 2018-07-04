@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+  <title>PAINT</title>
+  <meta name="description" content="Trabajo Paint 2018">
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container clearfix">
+      <div class="left-col">
+
+        <!-- Boton para borrar -->
+        <div class="boxColores">
+          <h3>Opciones</h3>
+          <div class="btns__row">
+            <a href="#" class="btn btn-clear" id="clearCanvas">Borrar</a>
+          </div>
+        </div>
+
+        <!-- Colores del Pincel -->
+
+        <div class="boxColores">
+          <h3>Colores</h3>
+          <div class="btns__row btn-colors">
+              <a href="#" class="btn btn-color btn-color-1" id="colorPurple" data-colors="purple"></a>
+              <a href="#" class="btn btn-color btn-color-2" id="colorGreen" data-colors="green"></a>
+              <a href="#" class="btn btn-color btn-color-3" id="colorYellow" data-colors="yellow"></a>
+              <a href="#" class="btn btn-color btn-color-4" id="colorBrown" data-colors="brown"></a>
+              <a href="#" class="btn btn-color btn-color-5" id="colorBlue" data-colors="blue"></a>
+              <a href="#" class="btn btn-color btn-color-6" id="colorCoral" data-colors="coral"></a>
+              <a href="#" class="btn btn-color btn-color-7" id="colorWhite" data-colors="white"></a>
+              <a href="#" class="btn btn-color btn-color-8" id="colorBlack" data-colors="black"></a>
+              <a href="#" class="btn btn-color btn-color-9" id="colorMaroon" data-colors="maroon"></a>
+              <a href="#" class="btn btn-color btn-color-10" id="colorSalmon" data-colors="salmon"></a>
+            </div>
+        </div>
+
+        <!-- Tamaños de pincel -->
+        <div class="boxColores">
+          <h3>Tamaño Làpiz</h3>
+          <div class="btns__row btn-sizes">
+            <a href="#" class="btn btn-size btn-size-1" data-size="7"></a>
+            <a href="#" class="btn btn-size btn-size-2" data-size="10"></a>
+            <a href="#" class="btn btn-size btn-size-3" data-size="13"></a>
+            <a href="#" class="btn btn-size btn-size-4" data-size="16"></a>
+            <a href="#" class="btn btn-size btn-size-5" data-size="19"></a>
+            <a href="#" class="btn btn-size btn-size-6" data-size="22"></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="right-col">
+        <div class="canvasDiv">
+          <canvas id="сanvasTemp" class="canvas-temp" width="800" height="500"></canvas>
+          <canvas id="сanvasCopy" class="canvas-copy" width="800" height="500"></canvas>
+        </div>
+      </div>
+      <div class="info">
+        <div>
+          <p><strong>Color: </strong><span id="iColor"></span></p>
+        </div>
+        <div>
+          <p><strong>Tamaño: </strong><span id="iSize"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
