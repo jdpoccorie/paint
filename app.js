@@ -23,6 +23,8 @@
   function info() {
     iColor.innerHTML = curColor
     iSize.innerHTML = curSize
+    iColor.style.backgroundColor = `${curColor}`
+    iColor.style.padding = `.5px`
   }
 
   function initCanvas() {
